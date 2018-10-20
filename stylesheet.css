@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+body {
+	font-family: futura, helvetica, sans-serif;
+	width: 57vw;
+	margin: 0 auto;
+}
+p {
+	font-family: Karla, helvetica, sans-serif;
+	color: #3a3a3a;
+	font-size: 1.75vw;
+}
+
+a {
+	text-decoration: none;
+	color: #3A3A3A;
+	position: relative;
+}
+
+.textlink::after {
+	content:'';
+	width:100%;
+	position: absolute;
+	left:0;
+	bottom:-1px;
+	height: 3px;
+	border-radius: 50px;
+	background: #30e8bf;
+	background: -webkit-linear-gradient(to left, #88B7FF, #B6AAFF);
+    	background: linear-gradient(to left, #88B7FF, #B6AAFF);
+}
+
+/* HEADER STYLING */
+header {
+	display:grid;
+	grid-template-columns: 1fr 1.5fr;
+	grid-template-areas:
+	"..... logo"
+	"title title"
+	"links image";
+}
+
+#logo{
+	
+	grid-area: logo;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+#background{
+	position: absolute;
+	z-index: -1;
+	width: 35%;
+	left:7.5%;
+}
+
+#hero {
+	grid-area: image;
+	max-width: 100%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.25), 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header > h1 {
+	grid-area: title;
+	font-size: 4.2vw;
+	width: 85%;
+	margin-left: 15%;
+	text-align: right;
+	color: transparent;
+	background-image: -webkit-linear-gradient(to left, #88B7FF, #B6AAFF);
+    	background-image: linear-gradient(to left, #88B7FF, #B6AAFF);
+	-webkit-background-clip: text;
+    	background-clip: text;
+}
+
+#links {
+	justify-self: end;
+	align-self: end;
+	grid-area: links;
+	font-size: 26pt;
+	line-height: 26pt;
+	text-align: right;
+	margin-right: 40px;
+}
+#links > div {
+	margin-top: 26pt;
+	display: inline-block;
+}
+.underline {
+	height: 3px;
+	margin-top: 3px;
+        border-radius: 50px;
+        background: #30e8bf;
+        background: -webkit-linear-gradient(to left, #88B7FF, #B6AAFF);
+        background: linear-gradient(to left, #88B7FF, #B6AAFF);
+}
+
+/*SECTION STYLING*/
+
+h2 {
+	font-size: 3vw;
+	font-color: #3a3a3a;
+}
+
+#arrowleft {
+	height: 1.5vw;
+}
+
+#arrowright {
+	height: 1.5vw;
+}
+
+/*EVENTS*/
+#events {
+	display: inline-block;
+	margin-top: 50px;
+}
+
+#events > p {
+	margin-top: 0;
+	width: 50%;
+	float: left;
+}
+
+#events > img {
+	width: 45%;
+	float: right;
+	border-radius: 10px;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.25), 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/*CLUBS*/
+
+#clubs {
+	text-align: right;
+	display: inline-block;
+}
+
+#clubs > img {
+	width: 45%;
+	float: left;
+	border-radius: 10px;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.25), 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#clubs > p {
+	margin-top: 0;
+	width: 50%;
+	float: right;
+}
+
+/*FOOTER STYLING*/
+
+footer {
+	margin-left: -21.5vw;
+	margin-top: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #eee;
+	width: 100vw;
+	text-align: center;
+
+}
+
