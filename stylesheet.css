@@ -52,12 +52,12 @@ header {
 	position: absolute;
 	z-index: -1;
 	width: 35%;
-	left:7.5%;
+	left:9%;
 }
 
 #hero {
 	grid-area: image;
-	max-width: 100%;
+	width: 100%;
 	border-radius: 10px;
 	box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.25), 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -69,8 +69,8 @@ header > h1 {
 	margin-left: 15%;
 	text-align: right;
 	color: transparent;
-	background-image: -webkit-linear-gradient(to left, #88B7FF, #B6AAFF);
-    	background-image: linear-gradient(to left, #88B7FF, #B6AAFF);
+	background-image: -webkit-linear-gradient(to left, #BBB7FF, #B6AAFF);
+    	background-image: linear-gradient(to left, #BBB7FF, #B6AAFF);
 	-webkit-background-clip: text;
     	background-clip: text;
 }
@@ -79,13 +79,15 @@ header > h1 {
 	justify-self: end;
 	align-self: end;
 	grid-area: links;
-	font-size: 26pt;
-	line-height: 26pt;
+	font-size: 2vw;
+	line-height: 2vw;
 	text-align: right;
 	margin-right: 40px;
+	font-weight:600;
 }
+
 #links > div {
-	margin-top: 26pt;
+	margin-top: 2vw;
 	display: inline-block;
 }
 .underline {
@@ -114,6 +116,7 @@ h2 {
 
 /*EVENTS*/
 #events {
+	position: relative;
 	display: inline-block;
 	margin-top: 50px;
 }
@@ -124,7 +127,16 @@ h2 {
 	float: left;
 }
 
-#events > img {
+#events > #background1 {
+	position: absolute;
+        z-index: -1;
+        width: 35vw;
+        margin: 0;
+	right:-5vw;
+	top: 0;
+}
+
+#events > #events {
 	width: 45%;
 	float: right;
 	border-radius: 10px;
@@ -138,6 +150,7 @@ h2 {
 	text-align: right;
 	display: inline-block;
 }
+
 
 #clubs > img {
 	width: 45%;
